@@ -1,0 +1,795 @@
+/* 
+    공통되어 사용되는 레이아웃을 정의
+    상황에 맞는 클래스를 부여해서 사용
+*/
+* {
+	box-sizing: border-box;
+}
+
+.area{
+	width:100%;
+}
+/* 내용 영역 감싸기 - 크기 1080px로 제한 */
+.contents_wrap {
+    width: 1080px;
+}
+/* 테이블 타이틀과 버튼이 들어가는 공간 */
+.table_top_area {
+    width: 1200px;
+    margin-top: 10px;
+    font-size: 0;
+    color: #000000;
+}
+/* 테이블 타이틀 공간 */
+.top_title_area {
+    display: inline-block;
+    width: 50%;
+    height: 50px;
+    line-height: 50px;
+
+    vertical-align: middle;
+    text-align: left;
+
+    font-size: 15pt;
+    font-weight: bold;
+}
+/* 테이블 리스트 체크 현황 */
+.top_title_area>div {
+    font-size: 10pt;
+    font-weight: normal;
+}
+/* 버튼 공간 */
+.top_btn_area {
+    display: inline-block;
+    width: 50%;
+    height: 50px;
+    line-height: 50px;
+	font-size : 10pt;
+    vertical-align: middle;
+    text-align: right;
+}
+
+/* 고객 등록 버튼영역 */
+.customer_btn_area {
+	width:100%;
+	height: 50px;
+	display : inline-block;
+	text-align : left;
+}
+
+/* 기본 테이블 설정 */
+.table_normal {
+    width: 1200px;
+    text-align: center;
+    border-collapse: collapse;
+/*     border-top: 2px solid #F2B807; */
+    font-size: 0;
+}
+
+/* 테이블 영역 설정 */
+.table_area {
+	height: 411px;
+}
+
+/* tr 기본 설정 */
+tr {
+    height: 35px;
+    font-size : 15px;
+    border-bottom: 1px solid #cacaca;
+}
+/* tr 밑줄 없는 설정 */
+.tr_no_uline {
+    border-bottom: 0;
+}
+
+/* 필드명 */
+.field_name {
+    background-color: #f2f2f2;
+    color: #272727;
+    border: 1px solid #cacaca;
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+
+/* 맨왼쪽 필드명 스타일 - border-left 제거 */
+.first_field_name {
+    border-left: 0;
+}
+/* 맨오른쪽 셀 스타일 */
+.last_field_name {
+    border-right: 0 ;
+}
+/* 필드 내용 */
+.field_contents {
+    padding: 10px 15px;
+    text-align: left;
+    vertical-align: middle;
+    font-size: 10pt;
+}
+/* 필드 내용이되 정렬은 가운데로 하고싶을때 */
+.contents_align_center {
+    text-align: center;
+}
+/* 강조 텍스트 */
+.acc_txt {
+    color: #ff3737;
+    font-weight: 800;
+}
+
+/* 빈 공간 div */
+.blank_space {
+    width: 100%;
+    height: 50px;
+}
+
+/* 가로스크롤바 */
+.widthscroll{
+   width: 100%;
+   white-space:nowrap;
+   position: relative;
+   overflow-x: scroll;
+   overflow-y: scroll;
+   overflow : scroll !important;
+}
+/* 가로스크롤바 */
+.widthscroll2{
+   width: 100%;
+   white-space:nowrap;
+   position: relative;
+   overflow-y: scroll !important;
+}
+/* 리스트 감싸기 - 크기 1100px 로 제한 */
+.list_wrap {
+    width: 1200px;
+}
+/* 테이블 보더  */ 
+.tborder tr td{
+	border : 1px solid #cacaca;
+	font-size : 9pt !important;
+}
+/* 리스트 테이블 */
+.table_list {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+
+    font-size: 0;
+}
+.table_list tbody tr td {
+    word-break: break-all;
+    word-wrap: break-word;
+    overflow-x: auto;
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+    overflow: hidden;
+/*     width: 100%; */
+}
+/* 리스트 테이블 헤더 */
+.table_list_header {
+    height: 40px;
+    background-color: #27a7df;
+    vertical-align: middle;
+}
+.table_list_header td {
+    padding : 0px 20px;
+    color: #ffffff;
+    font-size: 10pt;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.padding0a10 td {
+    padding : 0px 10px !important;
+}
+/* 리스트 테이블 td 왼쪽 정렬 스타일 */
+.table_list .list_contents td {
+    padding : 0px 20px;
+    font-size: 10pt;
+    color: #000000;
+    vertical-align: middle;
+}
+.list_contents:hover {
+    background-color: #eeeeee;
+    cursor : pointer;
+}
+/* none_hover */
+.none_hover {
+	cursor : default;
+}
+.td_left_align {
+    text-align: left;
+}
+/* 리스트 테이블 페이지 인덱스 영역 */
+.list_paging_area {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+
+    margin-top: 30px;
+
+    text-align: center;
+    vertical-align: middle;
+}
+
+.field_DD_size {
+	display : inline-block;
+	width : 200px;
+	vertical-align: top;
+}
+/* 필드 내용이되 정렬은 가운데로 하고싶을때 */
+.contents_align_center {
+    text-align: center;
+}
+/* 강조 텍스트 */
+.acc_txt {
+    color: #ff3737;
+    font-weight: 800;
+}
+
+/* 빈 공간 div */
+.blank_space {
+    width: 100%;
+    height: 50px;
+}
+/* 텍스트 색상 */ 
+.colorred {
+	color: #ff2f2f;
+}
+/* 텍스트 색상 */ 
+.backcolorred {
+	background-color: #ffd9d9;
+
+}
+.backcolorwhite {
+	background-color: #ffffff;
+}
+
+.noborder {
+	border : 0;
+}
+.txtalignright {
+	text-align: right;
+}
+
+.nopadding {
+	padding : 0px !important;
+}
+
+/* 기본 입력 폼 % 사이즈 */
+/* 10% */
+.size10{
+	width:10%;
+}
+/* 15% */
+.size15{
+	width:15%;
+}
+/* 20% */
+.size20{
+	width:20%;
+}
+/* 25% */
+.size25{
+	width:25% !important;
+}
+/* 30% */
+.size30{
+	width:30% !important;
+}
+/* 35% */
+.size35{
+	width:35% !important;
+}
+/* 40% */
+.size40{
+	width:40% !important;
+}
+/* 45% */
+.size45 {
+	width:45% !important;
+}
+/* 48% */
+.size48{
+	width:48% !important;
+}
+/* 60% */
+.size60{
+	width:60% !important;
+}
+/* 70% */
+.size70{
+	width:70% !important;
+}
+/* 75% */
+.size75{
+	width:75% !important;
+}
+/* 80% */
+.size80{
+	width:80% !important;
+}
+/* 90% */
+.size90{
+	width:90% !important;
+}
+/* 100% */
+.size100{
+	width:100% !important;
+}
+/* 기본 입력 폼 px 사이즈 */
+/* 10px */
+.pxsize10{
+	width:10px;
+}
+/* 20px */
+.pxsize20{
+	width:20px;
+}
+/* 25px */
+.pxsize25{
+	width:25px;
+}
+/* 30px */
+.pxsize30{
+	width:30px;
+}
+/* 35px */
+.pxsize35{
+	width:35px;
+}
+/* 40px */
+.pxsize40{
+	width:40px;
+}
+/* 50px */
+.pxsize50{
+	width:50px;
+}
+/* 60px */
+.pxsize60{
+	width:60px !important;
+}
+/* 70px */
+.pxsize70{
+	width:70px;
+}
+/* 75px */
+.pxsize75{
+	width:75px;
+}
+/* 80px */
+.pxsize80{
+	width:80px;
+}
+/* 100px */
+.pxsize100{
+	width:100px;
+}
+/* 120px */
+.pxsize120{
+	width:120px;
+}
+/* 150px */
+.pxsize150{
+	width:150px;
+}
+/* 180px */
+.pxsize180{
+	width:180px;
+}
+/* 190px */
+.pxsize190{
+	width:190px;
+}
+/* 195px */
+.pxsize195{
+	width:195px;
+}
+/* 200px */
+.pxsize200{
+	width:200px;
+}
+/* 210px */
+.pxsize210{
+	width:210px;
+}
+/* 220px */
+.pxsize220{
+	width:220px;
+}
+/* 250px */
+.pxsize250{
+	width:250px;
+}
+/* 260px */
+.pxsize260{
+	width:260px;
+}
+/* 270px */
+.pxsize270{
+	width:270px;
+}
+/* 280px */
+.pxsize280{
+	width:280px;
+}
+/* 310px */
+.pxsize310{
+	width:310px;
+}
+/* 400px */
+.pxsize400{
+	width:400px;
+}
+/* 495px */
+.pxsize495{
+	width:495px !important;
+}
+/* 1510px */
+.pxsize1510{
+	width:1510px;
+}
+/* 1650px */
+.pxsize1650{
+	width:1650px;
+}
+/* 1760px */
+.pxsize1760{
+	width:1760px;
+}
+/* 필수입력 사항 *(별포) 스타일 */
+.important_text {
+	color: #ff3737;
+	font-weight: 800;
+	text-align: center;
+}
+
+/* font-weight*/
+.fontweight{
+	font-weight:bold;
+}
+/* margin-top */
+.mt10 {
+	margin-top : 10px;
+}
+/* margin-bottom */
+.mb10 {
+	margin-bottom : 10px;
+}
+/* display */
+.dis_block{
+	display:block !important;
+}
+.dis_inline_block{
+	display:inline !important;
+}
+
+/* margin-left */
+.ml10{
+	margin-left:10px;
+}
+.ml10{
+	margin-left:15px;
+}
+
+/* margin-top */
+.mt10{
+	margin-top:10px;
+}
+
+/* margin-top */
+.mt20{
+	margin-top:20px;
+}
+.mt30{
+	margin-top:30px;
+}
+/* margin-right */
+.mr20{
+	margin-right:20px;
+}
+
+/* margin-top */
+.mb10{
+	margin-bottom:10px;
+}
+
+/* hegiht px*/
+.height50{
+	height:50px;
+}
+.height100{
+	height:100px;
+}
+.height40{
+	height:40px !important;
+}
+.height20{
+	height:20px !important;
+}
+
+/* vertical-align */
+.ver_top{
+	vertical-align:top !important;
+}
+.ver_middle{
+	vertical-align:middle !important;
+}
+
+/* border-radius */
+.b_r0{
+	border-radius:0px !important;
+}
+
+/* text-align */
+.text_align_left{
+	text-align:left !important;
+}
+.text_align_right{
+	text-align:right;
+}
+
+/* text-indent */
+.text_indent10{
+	text-indent:10px;
+}
+.text_indent30{
+	text-indent:30px;
+}
+.text_indent50{
+	text-indent:50px;
+}
+
+
+/* font-size */
+.fs0{
+	font-size:0;
+}
+/* ------------------------------------------------------------------------------- 김현 ----------------------------------------------------------------------- */
+.detail_srch_area{
+	margin-left : 10px;
+	width: 502px;
+	height: 40px;
+	/* border : 1px solid #1b5ac2; */
+	border : 1px solid #27aae1;
+	border-radius: 5px;
+	background : #ffffff;
+}
+.detail_table_area{
+	width : 1100px;
+	height : 180px;
+	margin-top : 10px;
+}
+.detail_row1{
+	border : 1px solid #D5D5D5;
+	width : 60px;
+}
+.detail_row_txt1{
+	width : 100%;
+	display : inline-block;
+	text-align : center;
+}
+.detail_row2{
+	border : 1px solid #D5D5D5;
+	width : 450px;
+	height : 160px;
+}
+.datail_table_top_area {
+    width: 1200px;
+    margin-top: 10px;
+    font-size: 0;
+    color: #000000;
+}
+/* 테이블 타이틀 공간 */
+.detail_top_title_area {
+    display: inline-block;
+    width: 45%;
+    height: 40px;
+    line-height: 36px;
+
+    vertical-align: middle;
+    text-align: left;
+
+    font-size: 15pt;
+    font-weight: bold;
+}
+.detail_top_title_area1 {
+    display: inline-block;
+    width: 45%;
+    height: 30px;
+	
+    vertical-align: top;
+    text-align: left;
+
+    font-size: 15pt;
+    font-weight: bold;
+}
+/* 일별 표시 버튼 영역 */
+.detail_table_top_area1{
+	width: 1050px;
+	height : 30px;
+    color: #000000;
+}
+/* 테이블 리스트 체크 현황 */
+.detail_top_title_area>div {
+    font-size: 10pt;
+    font-weight: normal;
+}
+/* 버튼 공간 */
+.detail_top_btn_area {
+    display: inline-block;
+    width: 50%;
+    height: 50px;
+    line-height: 50px;
+	font-size : 10pt;
+    vertical-align: middle;
+    text-align: right;
+}
+.detail_table_srch {
+	margin-left : 7px;
+}
+.detail_down_Btn > input {
+	margin-left : 10px;
+	margin-bottom : 10px;
+	outline : none;
+}
+/* .dtta {
+	width : 100%;
+	height : 290px;
+} */
+.detail_table_area > table {
+	width: 1050px;
+	border-collapse: collapse; /* 셀 테두리 합치기 */
+	padding: 0px;
+	margin: 0px;
+	border-spacing: 0px;
+	font-size: 8pt;
+	border-top: 2px solid #27a7df;
+	margin-left : 10px;
+}
+.down_table_area > table {
+	width: 1050px;
+	border-collapse: collapse; /* 셀 테두리 합치기 */
+	padding: 0px;
+	margin: 0px;
+	border-spacing: 0px;
+	font-size: 10pt;
+	border-top: 2px solid #27a7df;
+	margin-left : 10px;
+}
+.dta > table {
+    width: 890px;
+    height: 270px;
+    border-collapse: collapse;
+    padding: 0px;
+    margin: 0px;
+    border-spacing: 0px;
+    border-top: 2px solid #27a7df;
+    border-right: 2px solid #27a7df;
+    margin-left: 10px;
+    overflow-x: scroll;
+}
+.dta2 > table {
+	width: 100%;
+	border-collapse: collapse; /* 셀 테두리 합치기 */
+	padding: 0px;
+	margin: 0px;
+	border-spacing: 0px;
+	border-top: 2px solid #27a7df;
+	margin-left : 10px;
+}
+.dta3 > table {
+	width: 1050px;
+	border-collapse: collapse; /* 셀 테두리 합치기 */
+	padding: 0px;
+	margin: 0px;
+	border-spacing: 0px;
+	border-top: 2px solid #27a7df;
+	margin-left : 10px;
+}
+.dta4 > table {
+	width: 700px;
+	border-collapse: collapse; /* 셀 테두리 합치기 */
+	padding: 0px;
+	margin: 0px;
+	border-spacing: 0px;
+	border-top: 2px solid #27a7df;
+	margin-left : 10px;
+}
+.dta{
+	width:810px;
+	height:270px;
+	vertical-align : top;
+	display:inline-block;
+}
+.detail_botttom_area{
+	width:auto;
+	height:auto;
+	width:810px;
+	height:270px;
+	vertical-align : top;
+	display:inline-block;
+}
+
+.dta2{
+	width:370px;
+	height:270px;
+	vertical-align : top;
+	display:inline-block;
+
+}
+.dta3{
+	width:1050px;
+	height:270px;
+	vertical-align : top;
+	display:inline-block;
+}
+.dta4{
+	width:700px;
+	height:270px;
+	vertical-align : top;
+	display:inline-block;
+}
+.detail_down_table {
+	display : inline-block;
+	text-align : center;
+	width:100%;
+	height:100%;
+	margin-top : 10px;
+}
+
+.detail_bottom_table {
+	display : inline-block;
+	text-align : center;
+	width:100%;
+	height:auto;
+	margin-top : 10px;
+}
+
+.detail_log_table {
+	display : inline-block;
+	text-align : center;
+	width:100%;
+	height:100%;
+	margin-top : 10px;
+}
+.status1 {
+	font-size : 11pt !important;
+	color : #4641D9;
+}
+.status2 {
+	text-align : left;
+	font-size : 8pt !important;
+	color : #4641D9;
+}
+
+.detail_td_span {
+	font-size: 12pt;
+	color: #333333;
+}
+
+.table_header_td {
+	background-color: #EAEAEA;
+	width: auto;
+}
+/* slimScroll 조건 */
+.tbody_scroll {
+    display:block;
+}
+
+.thead_scroll, .tbody_scroll tr {
+    display:table;
+    width:100%;
+    table-layout: fixed;
+}
+/* slimScroll 끝 */
+.w60{
+	width: 60px;
+}
+.w70{
+	width: 70px;
+}
+.w80{
+	width: 80px;
+}

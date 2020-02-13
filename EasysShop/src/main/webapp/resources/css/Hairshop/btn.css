@@ -1,0 +1,289 @@
+/* 
+    버튼의 기본적인 스타일을 정의
+
+    [사용법]
+    class="버튼색스타일 버튼크기스타일"
+*/
+* {
+	box-sizing: border-box;
+}
+/* 버튼 색 스타일 */
+/* 파랑 버튼 */
+.btn_normal {
+    display: inline-block;
+    margin-left: 10px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 3px;
+    background-color: #27aae1;
+    border: 1px solid #27aae1;
+    color: #ffffff;
+    box-shadow: 1px 1px 1px #cacaca;
+    font-size: 10pt;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn_normal2 {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 3px;
+    background-color: #27aae1;
+    border: 1px solid #27aae1;
+    color: #ffffff;
+    box-shadow: 1px 1px 1px #cacaca;
+    font-size: 10pt;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.Customer_btn{
+    display: inline-block;
+    
+    height : 28px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 3px;
+    background-color: #27aae1;
+    border: 1px solid #27aae1;
+    color: #ffffff;
+    box-shadow: 1px 1px 1px #cacaca;
+    font-size: 10pt;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* 파랑date 버튼 */
+.btn_date {
+    display: inline-block;
+    margin-left: 1px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 3px;
+    background-color: #27aae1;
+    border: 1px solid #27aae1;
+    color: #ffffff;
+    font-size: 10pt;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #cacaca;
+}
+.btn_normal:hover {
+    background-color: #1d95c9;
+}
+/* 검은색 버튼 */
+.btn_black {
+    display: inline-block;
+    margin-left: 10px;
+
+    text-align: center;
+    vertical-align: middle;
+
+    border-radius: 3px;
+
+    background-color: #4b4b4b;
+    border: 1px solid #383838;
+    color: #ffffff;
+
+    font-size: 10pt;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn_black:hover {
+    background-color: #272727;
+}
+/* 빨간색 버튼 */
+.btn_red {
+    display: inline-block;
+    margin-left: 10px;
+
+    text-align: center;
+    vertical-align: middle;
+
+    border-radius: 3px;
+
+    background-color: #ff2f2f;
+    border: 1px solid #ff4d4d;
+    color: #ffffff;
+
+    font-size: 10pt;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn_red:hover {
+    background-color: #ff4d4d;
+}
+/* 무색 버튼  */
+.btn_opac-z {
+    display: inline-block;
+    margin-left: 10px;
+
+    text-align: center;
+    vertical-align: middle;
+    border: 2px solid #27272700;
+
+    border-radius: 3px;
+
+    color: #272727;
+
+    font-size: 10pt;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn_opac-z:hover {
+    color: #F2B807;
+}
+/* 페이징 인덱스 버튼 */
+.btn_paging {
+    display: inline-block;
+    margin: 0 1px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #27aae1;
+    color: #ffffff;
+    font-size: 10pt;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.btn_paging_on {
+	display: inline-block;
+    margin: 0 1px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #ffffff;
+    color: #27aae1;
+    font-size: 10pt;
+    cursor: pointer;
+    border-radius: 3px;
+    border : 1px solid #e5e5e5;
+}
+.btn_paging:hover {
+    background-color: #1d95c9;
+}
+
+
+/* 버튼 크기 스타일 */
+/* 기본 버튼 크기 */
+.btn_size_normal {
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+}
+
+/* 가로 60px 세로 30px 버튼 크기 */
+.btn_size_w60h30 {
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 0;
+}
+/* 가로 40px 세로 20px 버튼 크기 */
+.btn_size_w40h20 {
+	font-size: 8pt;
+    width: 40px;
+    height: 20px;
+    line-height: 30px;
+    margin-left: 0;
+}
+/* 큰 버튼 크기 */
+.btn_size_big {
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+}
+/* 정사각형 버튼 크기 - 취소 아이콘 버튼으로 활용 */
+.btn_size_sqr {
+    width: 20px;
+    height: 20px;
+    margin-left: 0px;
+}
+/* 가로 영역을 채우는 버튼 크기 */
+.btn_size_wfull {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    margin-left: 0;
+}
+/* 가로 고정 버튼 크기 - 100 */
+.btn_size_w100 {
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 0;
+}
+.detail_btn_nomarl{
+	display: inline-block;
+    margin-left: 10px;
+
+    text-align: center;
+    vertical-align: middle;
+
+    border-radius: 3px;
+
+    background-color: #27aae1;
+    border: 1px solid #008aab;
+    color: #ffffff;
+
+    font-size: 10pt;
+    font-weight: bold;
+    cursor: pointer;
+}
+.detail_btn_size_normal {
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    vertical-align : middle;
+}
+.detail_srch_btn{
+	display : inline-block;
+	width : 50px;
+	height : 100%;
+	
+	border : 0px;
+	border-radius: 5px;
+	
+	/* background-color : #1b5ac2; */
+	background-color: #27aae1;
+	color : #ffffff;
+	font-size : 12pt;
+	
+	vertical-align : top;
+	
+	text-align : center;
+	line-height : 38px;
+}
+
+.detail_srch_btn:hover{
+	cursor: pointer;
+	background-color: #1D95C9;
+}
+
+/* ------------------------------------------------------------------ 김현 버튼 스타일 ----------------------------------------------------------------------------------- */
+/* 팝업 검색 버튼 스타일 현 */
+.btn_search_normal_h{
+    display: inline-block;
+    text-align: center;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background-color: #27aae1;
+    border:0;
+    border-top: 1px solid #27aae1;
+    border-right: 1px solid #27aae1;
+    border-bottom: 1px solid #27aae1;
+    color: #ffffff;
+    font-size: 10pt;
+    font-weight: bold;
+    cursor: pointer;
+    vertical-align:middle;
+    padding:0;
+}
+.btn_search_normal_h:hover{
+	background-color: #1d95c9;	
+}
+
+/* ------------------------------------------------------------------ 김현 버튼 스타일 ----------------------------------------------------------------------------------- */
